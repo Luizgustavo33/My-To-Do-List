@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Crud3.Models.Auditoria>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Auditoria</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Alteração)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Alteração)
+            </td>
+          
+        </tr>
+}
+    </tbody>
+</table>

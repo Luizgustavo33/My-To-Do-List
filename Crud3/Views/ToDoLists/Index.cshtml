@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Crud3.Models.ToDoList>
+
+@{
+    ViewData["Title"] = "Index";
+
+}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+    function selects() {
+        var ele = document.getElementsByName('chk');
+        for (var i = 0; i < ele.length; i++) {
+            if (ele[i].type == 'checkbox')
+                ele[i].checked = true;
+        }
+    }
+    function deSelect() {
+        var ele = document.getElementsByName('chk');
+        for (var i = 0; i < ele.length; i++) {
+            if (ele[i].type == 'checkbox')
+                ele[i].checked = false;
+
+        }
+    }
+
+</script>
+<script type="text/javascript">
+    function Fin() {
+
+        document.getElementById().click();
+        rowRange.setBackgroundColor("#CC6666");
+    }
+    
+</script>
+
+
+
+
+
+<h1>My To Do List</h1>
+
+<p>
+    <a asp-action="Create"><button type="button" class="btn btn-warning">Cadastrar nova atividade</button></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descrição)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prioridade)
+            </th>
+            <th></th>
+        </tr>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+
+                    <label>  <input type="checkbox" name="chk" /> </label>
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descrição)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Prioridade)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id"><button type="button" class="btn btn-primary">Editar</button></a>
+                    <a asp-action="Details" asp-route-id="@item.Id"><button type="button" class="btn btn-info">Detalhes</button></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id"><button type="button" class="btn btn-danger">Deletar</button></a>
+                    <input type="button" class="btn btn-success" onclick='Fin()' value="Finalizar" />
+
+
+                </td>
+
+
+            </tr>
+
+        }
+    </tbody>
+</table>
+<input type="button" class="btn btn-info" onclick='selects()' value="Selecionar Tudo" />
+<input type="button" class="btn btn-secondary" onclick='deSelect()' value="Desmarcar tudo" />
+<button type="button" class="btn btn-success">Finalizar Selecionados</button>
