@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 
 }
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <script type="text/javascript">
     function selects() {
         var ele = document.getElementsByName('chk');
@@ -23,14 +23,41 @@
     }
 
 </script>
-<script type="text/javascript">
-    function Fin() {
 
-        document.getElementById().click();
-        rowRange.setBackgroundColor("#CC6666");
+<script type="text/javascript">
+    function Fin(el) {
+        el = el || window.event;
+        el = el.target || el.srcElement;
+
+        el = el.parentElement
+        el = el.previousElementSibling;
+        el = el.previousElementSibling;
+        el.classList.add("finished");
     }
-    
 </script>
+
+<script type="text/javascript">
+    function FinAll() {
+        var ele = document.getElementsByName('chk');
+        el = document.querySelectorAll("#myclass > tbody > tr")
+        for (var i = 0; i < ele.length; i++) {
+            if (ele[i].checked == true)
+
+                el[i].style.backgroundColor = "greenyellow";
+        }
+    }
+</script>
+
+
+
+<style>
+    .finished {
+        background-color: greenyellow;
+    }
+</style>
+
+
+
 
 
 
@@ -41,7 +68,7 @@
 <p>
     <a asp-action="Create"><button type="button" class="btn btn-warning">Cadastrar nova atividade</button></a>
 </p>
-<table class="table">
+<table class="table" id="myclass">
     <thead>
         <tr>
             <th></th>
@@ -66,10 +93,10 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Descrição)
                 </td>
-                <td>
+                <td c>
                     @Html.DisplayFor(modelItem => item.Prioridade)
                 </td>
-                <td>
+                <td class="">
                     <a asp-action="Edit" asp-route-id="@item.Id"><button type="button" class="btn btn-primary">Editar</button></a>
                     <a asp-action="Details" asp-route-id="@item.Id"><button type="button" class="btn btn-info">Detalhes</button></a>
                     <a asp-action="Delete" asp-route-id="@item.Id"><button type="button" class="btn btn-danger">Deletar</button></a>
@@ -80,10 +107,10 @@
 
 
             </tr>
-
         }
     </tbody>
 </table>
 <input type="button" class="btn btn-info" onclick='selects()' value="Selecionar Tudo" />
 <input type="button" class="btn btn-secondary" onclick='deSelect()' value="Desmarcar tudo" />
-<button type="button" class="btn btn-success">Finalizar Selecionados</button>
+<button type="button" onclick='FinAll()' class="btn btn-success">Finalizar Selecionados</button>
+

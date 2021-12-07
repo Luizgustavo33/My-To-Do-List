@@ -13,16 +13,16 @@ namespace Crud3.Models
     {
         [Column("Id")]
         [Display(Name = "Codigo")]
-
         public int Id { get; set; }
 
         [Column("Descrição")]
         [Display(Name = "Descrição")]
-
+        [Required]
         public string Descrição { get; set; }
 
         [Column("Prioridade")]
         [Display(Name = "Prioridade")]
+        [Required]
 
         public string Prioridade { get; set; }
 
