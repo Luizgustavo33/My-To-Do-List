@@ -1,5 +1,6 @@
 # My-To-Do-List
 Essa aplicação é um Crud onde é listada atividades e afazeres. 
+
 Ferramentas utilizadas: C#(DotNet/MVC),HTML(Bootstrap, CSS, JS), Sql Server (servidor local/ Express), Visual Studio.
 
 Feito no Windows 10
