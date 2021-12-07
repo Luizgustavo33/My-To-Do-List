@@ -11,11 +11,11 @@ Visual Studio 2019
 
 Sql server 2019 (servidor local/Express) 
 
-É necessário trocar o ID de conexão com o banco para o funcionamento:
+É necessário trocar o nome do servidor de conexão com o banco para o funcionamento:
 
 ![image](https://user-images.githubusercontent.com/74794415/145095142-fb8cd520-3111-4de0-b1c4-113185ea5ef2.png)
 
-Você deverá trocar a parte grifada de azul pelo ID do seu banco que deseja utilizar:
+Você deverá trocar a parte grifada de azul pelo nome do servidor do seu banco que deseja utilizar:
 
 ![image](https://user-images.githubusercontent.com/74794415/145095726-1e042ff7-7cac-4702-bff9-38d2d8413687.png)
 
