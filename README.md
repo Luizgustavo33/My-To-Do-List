@@ -2,7 +2,7 @@
 Essa aplicação é um Crud onde é listada atividades e afazeres. 
 Ferramentas utilizadas: C#(DotNet/MVC),HTML(Bootstrap, CSS, JS), Sql Server (servidor local/ Express), Visual Studio.
 
-Feito no Windons 10
+Feito no Windows 10
 
 Visual Studio 2019
 
