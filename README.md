@@ -12,8 +12,7 @@ Nessa aplicação existem 7 telas:
 
 ![image](https://user-images.githubusercontent.com/74794415/145089467-8a2abcec-0851-4425-8a90-7182811e27a3.png)
 
-3.Criar: Onde o usuário cria uma nova atividade.![145091747-ec3786fb-56e7-4178-b289-8baf4e68bcaa](https://user-images.githubusercontent.com/74794415/145091938-bbd90da9-8a5d-4452-a70c-5f1b922be465.png)
-
+3.Criar: Onde o usuário cria uma nova atividade.![145091747-ec3786fb-56e7-4178-b289-8baf4e68bcaa]
 
 ![image](https://user-images.githubusercontent.com/74794415/145090965-d95dfca1-af2a-4d6b-b7d5-c165da0b2c60.png)
 
