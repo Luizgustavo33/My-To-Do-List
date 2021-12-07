@@ -1,6 +1,6 @@
 # My-To-Do-List
-Essa aplicação é um Crud onde é listada atividades e afazares. 
-Ferramentas utilizadas: C#(DotNet/MVC),HTMLL(Bootstrap, CSS, JS), Sql Server (servidor local/ Express), Visual Studio.
+Essa aplicação é um Crud onde é listada atividades e afazeres. 
+Ferramentas utilizadas: C#(DotNet/MVC),HTML(Bootstrap, CSS, JS), Sql Server (servidor local/ Express), Visual Studio.
 
 Nessa aplicação existem 7 telas: 
 
