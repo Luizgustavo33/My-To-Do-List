@@ -2,7 +2,26 @@
 Essa aplicação é um Crud onde é listada atividades e afazeres. 
 Ferramentas utilizadas: C#(DotNet/MVC),HTML(Bootstrap, CSS, JS), Sql Server (servidor local/ Express), Visual Studio.
 
-Nessa aplicação existem 7 telas: 
+Feito no Windons 10
+
+Visual Studio 2019
+
+.Net version: 5.0
+
+Sql server 2019 (servidor local/Express) 
+
+É necessário trocar o ID de conexão com o banco para o funcionamento:
+
+![image](https://user-images.githubusercontent.com/74794415/145095142-fb8cd520-3111-4de0-b1c4-113185ea5ef2.png)
+
+Você deverá trocar a parte grifada de azul pelo ID do seu banco que deseja utilizar:
+
+![image](https://user-images.githubusercontent.com/74794415/145095726-1e042ff7-7cac-4702-bff9-38d2d8413687.png)
+
+
+
+
+Nesta aplicação existem 7 telas: 
 
 1.Boas vindas: Uma mensagem de boas vindas com redirecionamento para tela da aplicação.
 
