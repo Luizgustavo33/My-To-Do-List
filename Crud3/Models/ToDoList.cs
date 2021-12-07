@@ -15,7 +15,7 @@ namespace Crud3.Models
         [Display(Name = "Codigo")]
         public int Id { get; set; }
 
-        [Column("Descrição")]
+        [Column("Descrição")]   
         [Display(Name = "Descrição")]
         [Required]
         public string Descrição { get; set; }
